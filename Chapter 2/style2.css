@@ -1,0 +1,38 @@
+* {
+    font-family: monospace;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+
+
+html{
+    font-size: 30px;
+      border: 3px solid black;
+}
+
+button, input, textarea{
+    font: inherit;
+}
+
+h1,h3 {
+    color:gold;
+}
+
+p {
+    color: brown;
+}
+
+.gray{
+    color: gray;
+    font-style: italic;
+}
+
+.highlight{
+    background-color: greenyellow;
+    font-size: 20px;
+}
+
+#second {
+    color: aqua;
+}
+
