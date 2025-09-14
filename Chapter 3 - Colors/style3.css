@@ -1,0 +1,10 @@
+body{
+    font-size: 22px;
+    color:#d45167;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffebcd;
+}
+
+p {
+    color: lab(48.52% -17.6 -5.54);
+}
