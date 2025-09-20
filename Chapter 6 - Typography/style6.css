@@ -1,0 +1,18 @@
+body {
+    padding: 10%;
+    font-size: 1rem;
+}
+
+p {
+    word-spacing: 0.6px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    text-decoration: double;
+    text-align: justify;
+    text-transform: capitalize;
+    text-shadow: 100;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: "SUSE Mono", sans-serif;
+    font-optical-sizing: auto;
+}
