@@ -1,0 +1,33 @@
+body{
+    padding: 10%;
+    font-size: 1rem;
+}
+
+
+ol{
+    list-style-type: circle;
+    list-style-type: lower-alpha;
+}
+
+ul{
+    list-style-type: upper-roman;
+    text-align: center;
+    list-style-position: inside;
+    list-style-image: url(image/download.png);
+    color: greenyellow;
+    list-style: square url(image/download.png) inside;
+}
+
+ul li{
+    color: aqua;
+}
+
+ol li:nth-child(2){
+    color: rgb(255, 140, 0);
+}
+
+ul li::marker{
+     color: brown;
+     font-size: 2em;
+     content:"Subscribe >>";
+}
