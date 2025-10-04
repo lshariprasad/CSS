@@ -1,0 +1,119 @@
+
+/* Reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #141414; /* Netflix style dark background */
+  color: #fff;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header.logo{
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+}
+
+header nav ul{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a{
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ;
+}
+
+header nav ul li a.hover{
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  padding: 4em 2em;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), #141414), url("https://via.placeholder.com/1200x400") center/cover no-repeat;
+}
+
+.hero h1{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero p{
+  padding: 1% 2% 2% 1%;
+
+}
+
+.hero button{
+  padding: 0.8em 1.5em;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+main{
+  padding: 2em;
+}
+
+main h2{
+  text-align: center;
+}
+
+card-container{
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 1em;
+  
+}
+
+.card{
+  min-width: 200px;
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.card img{
+  width: 100%;
+  display: block;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card h3 .card p{
+  padding: 0.5em 1em;
+}
+
+footer{
+  text-align: center;
+  padding: 1em;
+  background-color: #111;
+  margin-top: 2em;
+}
