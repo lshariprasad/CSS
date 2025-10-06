@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 200vh;
+}
+
+.outer-container {
+  border: 3px double black;
+  width: 75vw;
+  height: 85vh;
+  margin: 40px auto;
+  position: relative;
+}
+
+.inner-container {
+  border: 2px solid red;
+  width: 40vw;
+  height: 50vh;
+  margin: 200px auto;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  color: white;
+  background-color: black;
+  font-family: "Courier New", Courier, monospace;
+  padding: 1rem;
+}
+
+.absolute {
+  background-color: blue;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* z-index: 1; */ /*  - How Many Layer Come to Forward. */
+}
+
+.relative {
+  background-color: red;
+  position: relative;
+  top: 100px;
+  left: 155px;
+}
+
+.fixed {
+  background-color: rgb(0, 255, 0);
+  position: fixed;
+  top: 150px;
+  left: 250px;
+}
+
+.sticky {
+  background-color: violet;
+  position: sticky;
+  top: 10px;
+}
