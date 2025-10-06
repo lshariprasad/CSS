@@ -1,0 +1,36 @@
+body{
+    font-size: 1.75rem;
+    text-align: justify;
+}
+
+.Block{
+    background-color: pink;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30vw;
+    height: 30vmax;
+    padding: 1rem;
+    text-align: center;
+    
+
+}
+.left{
+    float: left;
+    margin-right: 20px;
+}
+
+.right{
+    float: right;
+    margin-left: 20px;
+}
+
+.clear{
+    clear: both;
+}
+
+section{
+    background-color: aqua;
+    border: 2px solid #333;
+    padding: 1rem;
+    display: flow-root;  /* We can use This Commond (overflow: auto;)*/
+}
