@@ -1,0 +1,74 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.5rem;
+}
+
+section {
+  height: 150vh;
+}
+
+.blue {
+  background-color: blue;
+  color: whitesmoke;
+}
+
+.red {
+  background-color: red;
+  color: whitesmoke;
+}
+
+.green {
+  background-color: green;
+  color: white;
+}
+
+header,
+footer {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
+  height: 80px;
+  color: white;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  font-size: 3rem;
+}
+
+footer {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  font-size: large;
+}
+
+a {
+  color: azure;
+}
+
+button {
+  background-color: silver;
+  font-size: inherit;
+  color: blue;
+  position: fixed;
+  top: 30%;
+  left: 0;
+}
+
+.youtube2 {
+  background-color: silver;
+  font-size: inherit;
+  color: blue;
+  position: fixed;
+  top: 35%;
+  left: 0;
+  z-index: 1;
+}
