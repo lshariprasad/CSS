@@ -1,0 +1,100 @@
+/* Begin Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+/* End Reset */
+
+/* Begin Utility Classes */
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+/* End Utility Classes */
+
+body {
+  min-height: 100vh;
+  background-color: aliceblue;
+  background-image: linear-gradient(rgb(254, 129, 129), pink, white);
+}
+
+.container {
+  background-color: bisque;
+  background-image: url("Images/Sundarshana\ Chakra.webp");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  border-bottom: 2px solid black;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+
+  background-color: bisque;
+  background-image: url("Images/Sundarshana\ Chakra.webp");
+  background-repeat: repeat;
+  background-size: cover;
+  /*  background-size: contain; */
+}
+
+.h1 {
+  font-size: 400%;
+  text-shadow: 2px 2px 5px black;
+  padding: 2rem;
+  border-radius: 2px;
+}
+
+.profile-pic {
+  width: 35%;
+}
+
+.profile-pic img {
+  width: 50%;
+  height: auto;
+  min-height: 100;
+  border: 1px double rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+.example {
+  margin-top: 1rem;
+  padding-left: 20px;
+  border: 3px solid skyblue;
+  background-color: aqua;
+}
+
+.example img {
+  width: 40%;
+  height: auto;
+}
+
+.clip {
+  font-weight: 800;
+  font-size: 10rem;
+  text-align: center;
+  background-image: url(Images/Radha\ and\ Krishna.jpeg);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  background-position: bottom;
+}
