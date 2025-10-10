@@ -1,0 +1,101 @@
+/*  || Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || General Styles */
+body {
+  font: 1.5rem;
+  min-height: 100vh;
+  background-color: rgb(255, 140, 0);
+  background-image: radial-gradient(whitesmoke, rgb(80, 236, 244));
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+nav,
+main,
+footer {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+header,
+footer {
+  position: sticky;
+  background-color: #1e2938;
+  color: whitesmoke;
+}
+
+nav {
+  background-color: white;
+  color: #1e2938;
+  padding: 0.5rem;
+  border-bottom: 2px solid black;
+}
+
+main {
+  flex-grow: 1;
+}
+
+header {
+  top: 0;
+}
+
+footer {
+  bottom: 0;
+}
+
+/*  || Syntax: */
+
+/*
+@media media type and (condition:breakpoint){
+    // CSS rules
+} */
+
+/* 
+condition: breakpoint{
+    min-width: 481px
+    orientation:landscape    
+}
+ */
+
+/* || Small Screen */
+@media screen and (min-width: 576px) {
+  body {
+    background-color: rgb(255, 255, 0);
+    background-image: radial-gradient(whitesmoke, yellow);
+  }
+  nav {
+    display: none;
+  }
+}
+
+/* || Medium Screen */
+@media screen and (min-width: 768px) {
+  body {
+    background-color: rgb(124, 38, 23);
+    background-image: radial-gradient(whitesmoke, rgb(119, 29, 29));
+  }
+}
+
+/* || Large Screen */
+@media screen and (min-width: 992px) {
+  body {
+    background-color: rgb(128, 0, 255);
+    background-image: radial-gradient(whitesmoke, rgb(128, 0, 255));
+  }
+}
+
+/* || Mobile Screen Landscape */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+  body {
+    background-color: rgb(196, 0, 173);
+    background-image: radial-gradient(whitesmoke, rgb(255, 0, 132));
+  }
+}
