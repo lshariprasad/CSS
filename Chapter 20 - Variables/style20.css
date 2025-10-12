@@ -1,0 +1,146 @@
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ||Variables */
+
+:root {
+  /*THIS ROOT BASED ON COLORS  */
+
+  /* || BACKGROUND-COLOR */
+  --BG-HEADER: rgba(0, 0, 0, 0.9);
+  --BG-BODY: #141414;
+  --BG-FOOTER: #000;
+  --BG-MAIN1: #1a1a1a;
+  --BG-MAIN2: #000;
+
+  /* || TEXT-COLOR */
+  --COLOR-H1: #e50914; /* Netflix red */
+  --COLOR-BODY: #fff;
+  --COLOR-MAIN-H2: #e50914;
+  --COLOR-MAIN-P: #ddd;
+  --COLOR-FOOTER: #777;
+
+  --COLOR-NAV: #e5e5e5;
+  --COLOR-HOVER: #e50914; /* Red hover effect */
+
+  /* || BORDER-COLOR */
+  --BORDER-FOOTER: #333;
+
+  /* ||THIS ROOT IS BASED ON FONTS */
+
+  /* ||FONT SIZE */
+  --FS-HH1: 2.5rem;
+  --FS-NAV: 1.1rem;
+  --FS-MH2: 3rem;
+  --FS-MP: 1.5rem;
+  --FS-F: 1rem;
+
+  /* ||FONT WEIGHT */
+  --FW-HH1: 700;
+
+  /* ||FONT FAMILY */
+  --FF-B: Arial, Helvetica, sans-serif;
+}
+
+/* || GLOBAL STYLES */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  background: linear-gradient(to bottom, var(--BG-HEADER), transparent);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+header h1 {
+  color: var(--COLOR-H1);
+  font-size: var(--FS-HH1);
+  font-weight: var(--FW-HH1);
+  letter-spacing: 1px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--FF-B);
+  background-color: var(--BG-BODY); /* Netflix dark background */
+  color: var(--COLOR-BODY);
+}
+
+/* || NAVIGATION */
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--COLOR-NAV);
+  text-decoration: none;
+  font-size: var(--FS-NAV);
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--COLOR-HOVER);
+}
+
+/* || MAIN CONTENT */
+main {
+  flex-grow: 1;
+  padding: 10rem 2rem 4rem;
+  background: radial-gradient(circle at top, var(--BG-MAIN1), var(--BG-MAIN2));
+  text-align: center;
+}
+
+main h2 {
+  font-size: var(--FS-MH2);
+  margin-bottom: 1rem;
+  color: var(--COLOR-MAIN-H2);
+}
+
+main p {
+  font-size: var(--FS-MP);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: var(--COLOR-MAIN-P);
+}
+
+/* || FOOTER */
+footer {
+  background-color: var(--BG-FOOTER);
+  color: var(--COLOR-FOOTER);
+  text-align: center;
+  padding: 2rem;
+  font-size: var(--FS-F);
+  border-top: 1px solid var(--BORDER-FOOTER);
+}
+
+/* || RESPONSIVE TWEAKS */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  main h2 {
+    font-size: 2.2rem;
+  }
+
+  main p {
+    font-size: 1.2rem;
+  }
+}
