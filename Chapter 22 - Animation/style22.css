@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.5rem;
+  font-family: "arial";
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  display: grid;
+  place-content: center;
+}
+
+div:first-child {
+  background-color: skyblue;
+  transform: translateX(-50%);
+  transform: rotate(180deg);
+  transform: scale(120%);
+  transform: skew(-10deg);
+}
+
+div:nth-child(2) {
+  background-color: yellow;
+  transform: translateY(-2rem);
+  transform: rotate(180deg);
+  transform: scaleY(120%);
+  transform: skewY(10deg);
+}
+
+div:last-child {
+  background-color: lightgreen;
+  transform: translate(100%, -5rem);
+  transform: rotate(78deg);
+  transform: scale(50%, 50%);
+  transform: skew(-10deg, -10deg);
+}
+
+div:hover {
+  background-color: midnightblue;
+  transition-property: background-color, transform;
+}
