@@ -1,6 +1,7 @@
 <h1 align="center"> 
 <img src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif" width="40px"> 
-<span style="color:#00FFFF;">Pure CSS Project</span>   
+<span style="color:#00FFFF;">Pure CSS And Html Applied Codes
+</span>   
 </h1>
 
 <h3 align="center" style="color:#ffffff;">🎨 Designed & Developed Using Only CSS</h3>
